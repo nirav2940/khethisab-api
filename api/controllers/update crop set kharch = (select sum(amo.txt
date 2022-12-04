@@ -1,0 +1,2 @@
+update crop set kharch = (select sum(amount) from kharcho WHERE kharcho.crop_id = crop.id);
+update crop set vechan = (select sum(amount) from vechan WHERE vechan.crop_id = crop.id);
